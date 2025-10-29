@@ -55,20 +55,20 @@ const Home = () => {
             <span className="text-xl">↗</span>
           </button>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <span className="text-gray-300 text-sm">Follow me:</span>
-            <div className="flex gap-3 text-lg">
-              <a href="#" className="hover:text-[#ff6b00] transition-colors">
-                <FaLinkedinIn />
-              </a>
-              <a href="#" className="hover:text-[#ff6b00] transition-colors">
-                <FaBehance />
-              </a>
-              <a href="#" className="hover:text-[#ff6b00] transition-colors">
-                <FaDribbble />
-              </a>
-            </div>
-          </div>
+         <div className="flex flex-col sm:flex-row items-center gap-3">
+  <span className="text-gray-300 text-sm">Follow me:</span>
+  <div className="flex gap-3 text-lg">
+    <a
+      href="https://www.linkedin.com/in/malik-hamza-84451b369/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#ff6b00] transition-colors"
+    >
+      <FaLinkedinIn />
+    </a>
+  </div>
+</div>
+
         </div>
       </div>
 
