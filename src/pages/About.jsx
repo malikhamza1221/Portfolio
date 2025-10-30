@@ -74,7 +74,7 @@ const About = () => {
               Experience
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Over <span className="text-[#ff6b00] font-medium">5 years</span> of
+              Over <span className="text-[#ff6b00] font-medium">3 years</span> of
               hands-on experience crafting engaging, responsive websites.
             </p>
           </div>

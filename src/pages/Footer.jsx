@@ -78,10 +78,10 @@ const Footer = () => {
         <div data-aos="fade-up" data-aos-delay="200" className="space-y-4 flex-1 min-w-[230px]">
           <h3 className="font-semibold text-[#ff6b00] text-lg">Contact</h3>
           <p className="text-gray-300 px-3 py-1 rounded-lg hover:bg-[#ff6b00]/20 transition-all duration-300 cursor-default">
-            Email: hello@example.com
+            Email: arainshab917@gmail.com
           </p>
           <p className="text-gray-300 px-3 py-1 rounded-lg hover:bg-[#ff6b00]/20 transition-all duration-300 cursor-default">
-            Phone: +92 300 0000000
+            Phone: +92 3706829230
           </p>
           <div className="flex space-x-4 mt-2">
             {socials.map((Icon, idx) => (

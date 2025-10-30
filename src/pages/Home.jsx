@@ -51,11 +51,11 @@ const Home = () => {
         {/* Buttons & Socials */}
         <div className="flex flex-col sm:flex-row items-center md:items-start gap-5 sm:gap-6 mt-6">
           <button className="bg-[#ff6b00] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-[0_0_20px_rgba(255,107,0,0.5)] transition-all duration-300 flex items-center gap-2 hover:scale-[1.03]">
-            Discover More
-            <span className="text-xl">↗</span>
+           Hire Me
+          
           </button>
 
-         <div className="flex flex-col sm:flex-row items-center gap-3">
+         <div className="flex flex-col sm:flex-row items-center gap-3 mt-3">
   <span className="text-gray-300 text-sm">Follow me:</span>
   <div className="flex gap-3 text-lg">
     <a
@@ -146,7 +146,7 @@ className="relative w-full md:w-1/2 flex justify-center items-center transition-
 
      {/* ✅ Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/923001234567" // <-- apna WhatsApp number lagayen yahan
+        href="https://wa.me/923706829230" // <-- apna WhatsApp number lagayen yahan
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_rgba(37,211,102,0.6)] transition-all duration-300 z-50"

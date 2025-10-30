@@ -27,24 +27,7 @@ const ProjectsPage = () => {
       tech: "HTML, CSS, JS",
       img: "/Akoya.png",
     },
-    {
-      id: 4,
-      title: "Company Website",
-      tech: "React, Tailwind",
-      img: "/portfolio.png",
-    },
-    {
-      id: 5,
-      title: "Modern UI Design",
-      tech: "React, Framer Motion",
-      img: "/comerce.png",
-    },
-    {
-      id: 6,
-      title: "Creative Landing Page",
-      tech: "HTML, CSS, JS",
-      img: "/project3.png",
-    },
+   
   ];
 
   return (
