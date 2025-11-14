@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 
 const ProjectsPage = () => {
   useEffect(() => {
@@ -11,28 +10,50 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Website",
-      tech: "React, Tailwind",
-      img: "/portfolio.png",
+      title: "Akoya",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "/Akoya.png",
+      link: "https://akoyasite.vercel.app/",
     },
     {
       id: 2,
-      title: "E-Commerce Store",
-      tech: "React, Firebase",
-      img: "/comerce.png",
+      title: "Grocery Store",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "grocerystore.png",
+      link: "https://grocery-store-eta-three.vercel.app/",
     },
     {
       id: 3,
-      title: "Akoya",
-      tech: "HTML, CSS, JS",
-      img: "/Akoya.png",
+      title: "Finance Dashboard",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "finance.png",
+      link: "https://financedashboard-alpha.vercel.app/",
     },
-   
+    {
+      id: 4,
+      title: "Food Site",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "/foodsite.png",
+      link: "https://foodsite-beta.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Dashboard",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "/dashboard.png",
+      link: "https://mydashboard-two-tau.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Coming Soon",
+      tech: "React & tailwind CSS,JavaScript",
+      img: "/comingsoon.png",
+      link: "", // You can add your link later
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-[#0B1C57] text-white px-4 sm:px-8 md:px-16 py-16 overflow-hidden ">
-    
+    <div className="min-h-screen bg-[#0B1C57] text-white px-4 sm:px-8 md:px-16 py-16 overflow-hidden">
       {/* Projects Section */}
       <section className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
@@ -54,26 +75,32 @@ const ProjectsPage = () => {
           data-aos-delay="200"
         >
           {projects.map((project) => (
-           <div
-  key={project.id}
-  className="bg-linear-to-br from-[#0B1C57] via-[#142a7c] to-[#1f3ba3] text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] hover:-translate-y-2 transition-all duration-500 w-full max-w-[340px] border border-[#1c2e82]/40"
->
-  <div className="overflow-hidden">
-    <img
-      src={project.img}
-      alt={project.title}
-      className="w-full h-48 object-contain hover:scale-110 transition-all duration-700"
-    />
-  </div>
-  <div className="p-6 text-left space-y-2">
-    <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-    <p className="text-sm text-gray-300">{project.tech}</p>
-    <button className="mt-3 text-[#ff6b00] font-medium text-sm hover:underline">
-      View Project →
-    </button>
-  </div>
-</div>
-
+            <a
+              key={project.id}
+              href={project.link || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-[340px]"
+            >
+              <div className="bg-linear-to-br from-[#0B1C57] via-[#142a7c] to-[#1f3ba3] text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] hover:-translate-y-2 transition-all duration-500">
+                <div className="overflow-hidden">
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-48 object-contain hover:scale-110 transition-all duration-700"
+                  />
+                </div>
+                <div className="p-6 text-left space-y-2">
+                  <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                  <p className="text-sm text-gray-300">{project.tech}</p>
+                  {project.link && (
+                    <button className="mt-3 text-[#ff6b00] font-medium text-sm hover:underline">
+                      View Project →
+                    </button>
+                  )}
+                </div>
+              </div>
+            </a>
           ))}
         </div>
       </section>
